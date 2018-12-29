@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'intro';
+  selectedCustomer:string ="Murat Güven";
+  
+  //angular2-notification config
+  options = {
+    position:["bottom","right"],
+    timeOut:3000,
+    lastOnBottom:true
+  }
+
 }

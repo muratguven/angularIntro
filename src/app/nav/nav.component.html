@@ -1,0 +1,13 @@
+<ul class="navbar-nav mr-auto">
+    <ng-container *ngIf="rootMenuItems">
+        <li *ngFor="let root of rootMenuItems" class="nav-item">
+            <a class="nav-link" [routerLink]="root.Url" routerLinkActive="router-link-active">{{root.DisplayName}}</a>
+        </li>
+    </ng-container>
+    <ng-container *ngIf="dropDownMenuItems">
+            <li class="nav-item dropdown" *ngFor="let drop of dropDownMenuItems">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      {{drop.DisplayName}}
+            </a>
+    </ng-container>
+</ul>

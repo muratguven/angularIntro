@@ -1,0 +1,10 @@
+<div>
+  <ul>
+    <li *ngFor="let customer of GetCustomers()" (click)="GetNotification(customer.NameSurName)">
+     <strong >{{customer.NameSurName}}</strong> 
+    </li>
+  </ul>
+</div>
+<div>
+  <b *ngIf="selected">Selected Customer {{selected}} </b>
+</div>
