@@ -17,6 +17,8 @@ import { ProductComponent } from './product/product.component';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { NavComponent } from './nav/nav.component';
 import { TestCommentsComponent } from './test-comments/test-comments.component';
+import { ProductCategoryComponent } from './productCategory/productCategory.component';
+import { CaseCategoryComponent } from './caseCategory/caseCategory.component';
 @NgModule({
    declarations: [
       AppComponent,
@@ -27,7 +29,9 @@ import { TestCommentsComponent } from './test-comments/test-comments.component';
       LoginComponent,
       ProductComponent,
       NavComponent,
-      TestCommentsComponent
+      TestCommentsComponent,
+      ProductCategoryComponent,
+      CaseCategoryComponent
    ],
    imports: [
       BrowserModule,
@@ -42,7 +46,6 @@ import { TestCommentsComponent } from './test-comments/test-comments.component';
    providers: [
       AlertifyService,
       NotificationsService
-     
    ],
    bootstrap: [
       AppComponent

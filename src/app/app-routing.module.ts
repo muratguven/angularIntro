@@ -1,3 +1,4 @@
+import { ProductCategoryComponent } from './productCategory/productCategory.component';
 import { TestCommentsComponent } from './test-comments/test-comments.component';
 import { ProductComponent } from './product/product.component';
 import { NgModule } from '@angular/core';
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path:"customer", component:CustomerComponent},
   {path:"product", component:ProductComponent},
   {path:"posts/:userId", component:PostsComponent},
-  {path:"comments", component:TestCommentsComponent}
+  {path:"comments", component:TestCommentsComponent},
+  {path:"productCategory", component:ProductCategoryComponent}
 ];
 
 @NgModule({

@@ -23,6 +23,7 @@ GetMenu(): MenuItems[]{
     result.push(new MenuItems().SetMenu(3,2,"customerPage","Customers-Sub","customer",""));
     result.push(new MenuItems().SetMenu(4,undefined,"postsPage","Posts","posts",""));
     result.push(new MenuItems().SetMenu(5,undefined,"commentsPage","Comment","comments",""));
+    result.push(new MenuItems().SetMenu(5,undefined,"categoryCreatePage","Product Category","productCategory",""));
     return result;
   }
 }
